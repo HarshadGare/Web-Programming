@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transition Property</title>
+         <style>
+		   #div1 {
+		       width:100px;
+			   height:100px;
+			   background:green;
+		   }
+		   #div1:hover {
+		       width:100px;
+			   height:100px;
+			   background:blue;
+			   transition: background 2s;
+		   }
+		   
+		   #div2 {
+		       width:100px;
+			   height:100px;
+			   background:green;
+		   }
+		   #div2:hover {
+		       width:200px;
+			   background:blue;
+			   transition: width 3s;
+		   }
+		   img {
+		       width:100%;
+			  	   
+			    }
+			img:hover {
+		 		   animation: img_animation 2s;
+			    }	
+			#div3 {
+			    width:200px;
+				height:200px;
+			}
+            #sdiv {
+			  height:200px;
+			}			
+		   @keyframes img_animation {
+		      from { width:100% }
+			  to { width:150% }
+		   }
+		   
+		  
+		 </style>
+	</head>
+<body>
+	 <div id="div1"></div> <br>
+	 <div id="div2"></div>
+	 <div id="div3"> <div id="sdiv"> <img src="../css/minian.jpg"> </div> </div>
+</body>
+</html>

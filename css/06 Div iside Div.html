@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Float Property & DIV tag inside DIV tag</title>
+	<style>
+	#div1 {
+	          width:200px;
+			  height:200px;
+			  background:red;
+              margin:20px;	
+              
+              float:left;			  
+	}
+	
+	#div2 {
+	          width:200px;
+			  height:200px;
+			  background:blue;
+	          margin:20px;
+			  float:right;
+	}
+	
+	 #div3 {
+	          background:silver;
+              padding:50px;	 
+	}
+	
+	/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+	#sdiv1 {
+	          width:200px;
+			  height:200px;
+			  background:red;
+              margin:20px;	
+              
+              float:left;			  
+	}
+	
+	#sdiv2 {
+	          width:200px;
+			  height:200px;
+			  background:blue;
+	          margin:20px;
+			  float:right;
+	}
+	
+	 #main_div {
+	          background:silver;
+              padding:50px;	 
+	}
+	
+	
+	
+	</style>
+</head>
+<body>
+	
+	<div id="div1"></div>
+     <div id="div2"></div>
+     <div id="div3"></div>	
+	
+	<br><br><br><br><br><br><br><br><br>
+	
+<div id="main_div">
+         	<div id="sdiv1"></div>
+            <div id="sdiv2"></div>
+			<div style="clear:both;"></div>  
+ </div>
+    
+  	
+	
+</body>
+</html>

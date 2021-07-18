@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Text and Box Shadow</title>
+	  <style>
+	    #div1 {
+		   background: orange;
+		   float:left;
+		   margin:10px;
+		   padding:100px;
+		   font-size:30px;
+		   color:white;
+		   border:2px solid black;
+		   text-shadow: 05px 02px  black; 
+		   box-shadow: 05px 02px red;
+		}
+		 #div2 {
+		   background: orange;
+		   float:left;
+		   margin:10px;
+		   padding:100px;
+		   font-size:30px;
+		   border:2px solid black;
+		   text-shadow: 05px 02px  black , 07px 03px red , 10px 02px blue;
+           box-shadow:00px 00px 20px red;
+		}
+		 #div3 {
+		   background: white;
+		   float:left;
+		   margin:10px;
+		   padding:100px;
+		   font-size:30px;
+		   
+		   text-shadow: 05px 02px 05px black; 
+		   box-shadow:0 0 10px silver;
+		}
+		#div4 {
+		   background: white;
+		   float:left;
+		   margin:10px;
+		   padding:100px;
+		   font-size:30px;
+		   
+		   text-shadow: 0 0 05px black; 
+		   box-shadow:0 0 10px silver inset;
+		}
+	  </style>
+	
+</head>
+<body>
+	<div id="div1">The Text</div>
+	<div id="div2">The Text</div>
+	<div id="div3">The Text</div>
+	<div id="div4">The Text</div>
+	<div id="div5"></div>
+	
+	
+</body>
+</html>

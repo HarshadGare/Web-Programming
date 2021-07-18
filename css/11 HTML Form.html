@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Form</title>
+	
+	<style>
+	     
+		form {
+		       width:460px;
+			   background:silver;
+			   margin: 0 auto;
+			   padding:10px;
+			   border: 05px black solid;
+			  }
+			  
+		input[type='text'] , input[type="password"] , select {
+		     
+			width:350px;
+			height:20px;
+			border:1px solid black;
+		}
+
+       textarea {
+	             resize: none;
+				 width:350px;
+				}		
+				
+		input[type='submit'] {
+		         
+                background: coral;
+                color: white;
+				border:1px solid black;
+				width:350px;
+				height: 30px;
+		   }		
+		
+	</style>
+	
+	
+<body>
+	 
+	 <form>
+	  
+	  <h1>Fill the Form</h1>  <hr>
+	  <table>
+	   <tr>
+	   	   <td>  <lable for="user">User Name :</lable>  </td>
+		  <td> <input type="text" id="user" name="user" > </td>
+	</tr>
+     
+     <tr>
+        <td> <lable for="pass">Password :</lable>  </td>
+		 <td> <input type="password" id="pass" name="password" > </td>
+	</tr>
+
+    <tr>	
+		<td> <lable >Gender :</lable></td>
+		<td> <br> <input type="radio" name="gender" value="male">Male <br>
+		 <input type="radio" name="gender" value="female">Female 	<br><br> </td>
+    </tr>
+
+    <tr>
+	    <td> <lable>Skills :</lable> </td>
+		<td> <input type="checkbox" name="html" value="html">HTML <br>
+		<input type="checkbox" name="php" value="php">PHP <br>
+		 <input type="checkbox" name="js" value="js">Java Script <br>
+		<input type="checkbox" name="css" value="css">CSS <br> <td>
+	</tr>	
+	
+	<tr>
+	     <td> <lable for="country">Country :</lable></td>
+		 <td>  <br>
+		      <select name="country" id="country">
+			         <option value="">Select country</option>
+					 <option value="in">India</option>
+					 <option value="sr">Srilanka</option>
+					 <option value="cn">Canada</option>
+					 <option value="en">England</option>
+					 <option value="usa">USA</option>
+			  </select>
+		 </td>
+	</tr>
+	
+	<tr>
+	     <td> <lable for="comments">Comments :</lable> </td>
+		 <td> <br> <textarea name="comments" id="comments" cols="30" rows="10"></textarea></td>
+	</tr>
+	
+	
+	<tr>
+	    <td> </td>
+	     <td>
+		   <input type="submit" value="Click to Submit" name="submit">
+		  </td>
+	</tr>
+         	  
+	</table>  
+	 </form>
+	
+</body>
+</html>

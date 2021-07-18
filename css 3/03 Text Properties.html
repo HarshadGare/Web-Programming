@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Text Properties </title>
+	  <style>
+	    #div0 {
+		    width:200px;
+			background:orange;
+			margin:20px;
+			border:2px solid black;
+			
+			
+		}
+		 #div1 {
+		    width:200px;
+			background:orange;
+			margin:20px;
+			border:2px solid black;
+			
+			white-space:nowrap;
+		}
+		#div1_1 {
+		    width:200px;
+			background:orange;
+			margin:20px;
+			border:2px solid black;
+			
+			overflow:hidden;
+			white-space:nowrap;
+		}
+		#div1_2 {
+		    width:200px;
+			background:orange;
+			margin:20px;
+			border:2px solid black;
+			
+			overflow:visible;
+			white-space:nowrap;
+		}
+		
+		#div2 {
+		    width:200px;
+			background:orange;
+			margin:20px;
+			border:2px solid black;
+			
+			text-overflow: ellipsis;
+			overflow:hidden;
+			white-space:nowrap;
+		}
+		#div3 {
+		    width:200px;
+			background:orange;
+			margin:20px;
+			border:2px solid black;
+			
+			word-wrap:break-word ;
+		}
+		#div4 {
+		    width:200px;
+			background:orange;
+			margin:20px;
+			border:2px solid black;
+
+			word-break:break-all;
+		}
+		
+	  </style>
+	
+</head>
+<body>
+    
+   <div id="div0">ahgkdsuyst kahsbdjkwyt akjdsaywte adnbsakyeta ,sdshgdajshdsharshadharshadharshadharshad s wueyw  wieuw n  awi etweytowy </div> 
+   
+    using <b>overflow:hidden;</b> and <b>white-space:nowrap</b>
+   <div id="div1">ahgkdsuyst kahsbdjkwyt akjdsaywte adnbsakyeta ,sdshgdajshdsharshadharshadharshadharshad s wueyw  wieuw n  awi etweytowy </div>
+   
+    <b>overflow:hidden; </b> and <b>white-space:nowrap;</b>
+   <div id="div1_1">ahgkdsuyst kahsbdjkwyt akjdsaywte adnbsakyeta ,sdshgdajshdsharshadharshadharshadharshad s wueyw  wieuw n  awi etweytowy </div>
+   
+   using <b>overflow:visible; </b> and <b>white-space:nowrap;</b>
+   <div id="div1_2">ahgkdsuyst kahsbdjkwyt akjdsaywte adnbsakyeta ,sdshgdajshdsharshadharshadharshadharshad s wueyw  wieuw n  awi etweytowy </div>
+   
+   using <b>text-overflow: ellipsis;</b> and  <b>overflow:hidden;</b> and <b>white-space:nowrap;</b>
+   <div id="div2">ahgkdsuyst kahsbdjkwyt akjdsaywte adnbsakyeta ,sdshgdajshdsharshadharshadharshadharshad s wueyw  wieuw n  awi etweytowy </div>
+   
+   using <b>word-wrap:break-word ;</b>
+   <div id="div3">ahgkdsuyst kahsbdjkwyt akjdsaywte adnbsakyeta ,sdshgdajshdsharshadharshadharshadharshad s wueyw  wieuw n  awi etweytowy </div>
+	
+	using <b>word-break:break-all;;</b>
+	<div id="div4">ahgkdsuyst kahsbdjkwyt akjdsaywte adnbsakyeta ,sdshgdajshdsharshadharshadharshadharshad s wueyw  wieuw n  awi etweytowy </div>
+	<div id=""></div>
+</body>
+</html>

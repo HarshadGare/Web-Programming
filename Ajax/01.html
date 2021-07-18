@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Learn Ajax</title>
+	  <script>
+	         function ajax_fun() {
+			     var xmlhttp = new XMLHttpRequest ();
+				 xmlhttp.onreadystatechange = function() {
+				     if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+					     var receiver = document.getElementById("data");
+						 receiver.innerHTML = xmlhttp.responseText;
+					 }
+				 }
+				 xmlhttp.open('GET', 'sub.html', true);
+				 xmlhttp.send();
+			 }
+	  </script>
+	
+</head>
+<body>
+         <button onclick="ajax_fun();">CLick</button>
+         <div id="data" style="margin:50px;">Data</div>   	
+</body>
+</html>

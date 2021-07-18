@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular js</title>
+	   <script src="js/angular.js"></script>
+	   
+	   <style>
+	        .first {
+			      background:blue;
+			}
+			.second {
+			     background: lightgreen;
+			}
+	   </style>
+</head>
+<body ng-app>
+    
+	<div ng-app>{{5 + 5}}</div>
+	<br><br>
+
+<!-- ng-model -->
+	<h3>ng-model</h3>
+     <lable>Username</lable>
+	 <input type="text" ng-model="name">
+	 <div>Hi {{ name }} </div>
+	 <br><br>
+
+<!-- ng-bind -->
+      <h3>ng-bind in span tag</h3>
+     <lable>Username</lable>
+	 <input type="text" ng-model="name">
+	 <div>Hi <span ng-bind="name"></span> </div>
+   <br><br> 
+
+<!-- ng-class -->
+   <h3>ng-class</h3>
+   <input type="text" ng-model="bgcolor"> Type word "first" or "second"
+   <div ng-class="bgcolor">
+	 <br><br>
+	   <lable>Number 1:</lable>
+	 <input type="number" ng-model="val1">
+	 <br>
+        <lable>Number 2:</lable>
+	 <input type="number" ng-model="val2">	 
+	  <br>
+	  No. 1:-{{val1}}  <br>
+	  No. 2:-{{val2}} <br>
+	  Addition is :{{val1+val2}}
+   </div>	  
+	  <br><br>
+
+<!-- ng-init -->
+      <h3>ng-init</h3>	  
+	   <lable>Number 1:</lable>
+	 <input type="number" ng-model="val3" ng-init="val3=5" value="val3">
+	 <br>
+        <lable>Number 2:</lable>
+	 <input type="number" ng-model="val4" ng-init="val4=10" value="val4">	 
+	  <br>
+	  No. 1:-{{val3}}  <br>
+	  No. 2:-{{val4}} <br>
+	  Addition is :{{val3+val4}}
+	 
+<!-- ng-show -->
+     <h3>ng-show</h3>	 
+	 <div>
+	     Show or Hide the html : <input type="checkbox" ng-model="show_hide">
+		 <div ng-show="show_hide">
+		      <h3>This is the Hide text</h3>
+		 </div>
+	  </div>
+	  <br><br>
+	  
+<!-- ng-open -->
+     <h3>ng-open</h3>
+	 This is only operated in Google chrome browser <br>
+     <lable>open or close the details tag :</lable> <input type="checkbox" ng-model="open_close">
+	 <details ng-open="open_close">
+	     <summary>Heading of paragraph</summary>
+		 <p>This is the paragraph</p>
+	 </details>
+	<br>
+	
+<!-- ng-selected -->	
+	<h3>ng-selected</h3>
+	Select: <input type="checkbox" ng-model="select">
+	<select>
+	   <option>Select any item</option>
+	   <option ng-selected="select">IT</option>
+	   <option>CM</option>
+	   <option>ME</option>
+	</select>
+	
+	
+<!-- ng-required -->	
+	<h3>ng-required</h3>
+	Mark as required: <input type="checkbox" ng-model="required_or_not">	
+	<form>
+	   <input type="text" ng-required="required_or_not">
+	   <input type="submit">
+	</form>
+	
+	
+<!-- ng-repeat -->	
+	<h3>ng-repeat</h3>
+	  <div ng-init="cars=['bmw','toyota','honda'];">
+	   <ul>
+	     <li ng-repeat="x in cars">{{x}}</li>
+	   </ul>
+	  </div>
+	  
+<!-- ng-list -->	
+	<h3>ng-list</h3>	
+	create array : <input type="text" ng-model="arr" ng-list>
+	<div>{{arr}}</div>
+	
+	<ul>
+	     <li ng-repeat="x in arr">{{x}}</li>
+	   </ul>
+	
+</body>
+</html>

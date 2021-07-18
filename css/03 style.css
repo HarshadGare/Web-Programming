@@ -1,0 +1,38 @@
+ p {
+     color:blue; 
+	 background-color:lightgreen;
+   }
+		 
+#sec_para {
+		       color:red; 
+			    background-color:lightblue;
+		 }	
+
+.main_class  {
+	            color:brown;
+              }		 
+
+.back_col  {
+	          background-color:silver;
+            }			  
+		 
+		 h1 {
+		       background-color:lightblue;
+			   color:yellow;
+		 }
+		 
+a:link {
+	     color: silver;
+}	
+ 
+a:visited {
+              color: yellow;	
+}
+
+a:hover  {
+	    color: orange;
+}		 
+
+a:active {
+	       color: brown;
+}
